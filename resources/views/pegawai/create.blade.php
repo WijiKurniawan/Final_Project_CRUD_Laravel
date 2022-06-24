@@ -6,7 +6,7 @@
 
 <div class ="container">
     <h1>Halaman create</h1>
-    <form action="/pegawai/create" method="POST">
+    <form action="/pegawai/store" method="POST">
     @csrf
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">NIP</label>
@@ -49,6 +49,7 @@
     </div>
     
     <input type="submit" name="submit" value="Simpan">
+
     
 
         
@@ -61,7 +62,7 @@
         <input type="text" name="NoHP" placeholder="Nomor HP"><br>
         <textarea name="Alamat" id="" cols="30" rows="10"></textarea><br>
         <input type="submit" name="submit" value="Simpan"> -->
-
+        
 
     </form>
 </div>
