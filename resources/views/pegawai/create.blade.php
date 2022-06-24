@@ -1,6 +1,7 @@
 <h1>Halaman create</h1>
 
-<form action="">
+<form action="/pegawai/store">
+    @csrf
     <input type="text" name="NIP" placeholder="NIP"><br>
     <input type="text" name="Nama" placeholder="Nama"><br>
     <input type="text" name="TempatLahir" placeholder="Tempat Lahir"><br>

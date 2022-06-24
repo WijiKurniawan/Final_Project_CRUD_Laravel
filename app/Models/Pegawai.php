@@ -9,4 +9,5 @@ class Pegawai extends Model
 {
     use HasFactory;
     protected $table = 'pegawai';
+    protected $guarded = []; //boleh isi semua tidak ada yg tidak boleh di isi (tidak ada yg dijaga)
 }

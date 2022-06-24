@@ -36,7 +36,8 @@ class PegawaiC extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+        Pegawai::create($request->except(['_token', 'submit']));
     }
 
     /**
