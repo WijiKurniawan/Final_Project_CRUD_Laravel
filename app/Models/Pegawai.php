@@ -10,3 +10,4 @@ class Pegawai extends Model
     use HasFactory;
     protected $table = 'pegawai';
 }
+bla bl a blalbla
