@@ -6,10 +6,10 @@
     <input type="text" name="TempatLahir" placeholder="Tempat Lahir"><br>
     <input type="date" name="TanggalLahir" placeholder="Tanggal Lahir"><br>
     <input type="text" name="Agama" placeholder="Agama"><br>
-    <select name="JenisKelamin">
-        <option value="Pilih Jenis Kelamin"></option>
-        <option value="Laki Laki"></option>
-        <option value="Perempuan"></option>
+    <select name="JenisKelamin"><br>
+        <option value="">Pilih Jenis Kelamin</option>
+        <option value="L">Laki Laki</option>
+        <option value="P">Perempuan</option>
     </select><br>
     <input type="text" name="NoHP" placeholder="Nomor HP"><br>
     <textarea name="Alamat" id="" cols="30" rows="10"></textarea><br>
