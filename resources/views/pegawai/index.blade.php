@@ -20,24 +20,73 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
             <li><a class="dropdown-item" href="{{url('absen')}}">Absen</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="{{url('lembur')}}">Lembur</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="{{url('jabatan')}}">Jabatan</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="{{url('riwayatjabatan')}}">Riwayat jabatan</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="{{url('pendidikan')}}">Pendidikan</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="{{url('pengalamankerja')}}">Pengalaman Kerja</a></li>
 
           </ul>
         </li>
         <li class="nav-item">
-          
+
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+
+<br />
+<br />
+
+<table border="1">
+  <tr>
+    <th>id</th>
+    <th>NIP</th>
+    <th>Nama</th>
+    <th>Alamat</th>
+    <th>TempatLahir</th>
+    <th>TanggalLahir</th>
+    <th>Agama</th>
+    <th>Jenis Kelamin</th>
+    <th>NoHP</th>
+    <th>Opsi</th>
+  </tr>
+  @foreach($pegawai as $p)
+  <tr>
+    <td>{{$p->id}}</td>
+    <td>{{$p->NIP}}</td>
+    <td>{{$p->Nama}}</td>
+    <td>{{$p->Alamat}}</td>
+    <td>{{$p->TempatLahir}}</td>
+    <td>{{$p->TanggalLahir}}</td>
+    <td>{{$p->Agama}}</td>
+    <td>{{$p->JenisKelamin}}</td>
+    <td>{{$p->NoHP}}</td>
+    <td>
+      <a href="/pegawai/edit/{{ $p->id }}">Edit</a>
+      |
+      <a href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
+    </td>
+  </tr>
+  @endforeach
+</table>
+
 @endsection

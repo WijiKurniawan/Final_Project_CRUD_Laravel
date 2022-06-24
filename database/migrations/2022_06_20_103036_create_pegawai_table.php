@@ -19,9 +19,9 @@ class CreatePegawaiTable extends Migration
             $table->text('Nama');
             $table->text('Alamat');
             $table->text('TempatLahir');
-            $table->text('TanggalLahir');
+            $table->date('TanggalLahir');
             $table->text('Agama');
-            $table->enum('Jenis Kelamin', ['L','P']);
+            $table->enum('JenisKelamin', ['L', 'P']);
             $table->text('NoHP');
             $table->timestamps();
         });
