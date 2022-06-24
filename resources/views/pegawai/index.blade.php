@@ -3,63 +3,82 @@
 @section('title','data pegawai')
 
 @section('content')
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Web Kepegawaian</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Pegawai</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Lainnya
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="{{url('absen')}}">Absen</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="{{url('lembur')}}">Lembur</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="{{url('jabatan')}}">Jabatan</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="{{url('riwayatjabatan')}}">Riwayat jabatan</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="{{url('pendidikan')}}">Pendidikan</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="{{url('pengalamankerja')}}">Pengalaman Kerja</a></li>
+<!DOCTYPE html>
+<html lang="en">
 
-          </ul>
-        </li>
-        <li class="nav-item">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
 
-        </li>
-      </ul>
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Web Kepegawaian</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pegawai</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lainnya
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="{{url('absen')}}">Absen</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="{{url('lembur')}}">Lembur</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="{{url('jabatan')}}">Jabatan</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="{{url('riwayatjabatan')}}">Riwayat jabatan</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="{{url('pendidikan')}}">Pendidikan</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="{{url('pengalamankerja')}}">Pengalaman Kerja</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
+<<<<<<< HEAD
 
+=======
+  <a href="/pegawai/create"> + Tambah Pegawai Baru</a>
+>>>>>>> dd924b92dd7a3638409bfe33ca5163ea6a9be96e
 
-<br />
-<br />
+  <br />
+  <br />
 
+<<<<<<< HEAD
 <body>
   <div class="container">
    <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
   <table class="table table-hover">
+=======
+  <table border="1">
+>>>>>>> dd924b92dd7a3638409bfe33ca5163ea6a9be96e
     <tr>
       <th>id</th>
       <th>NIP</th>
@@ -84,16 +103,28 @@
       <td>{{$p->JenisKelamin}}</td>
       <td>{{$p->NoHP}}</td>
       <td>
+<<<<<<< HEAD
         <a class="btn btn-danger" href="/pegawai/edit/{{ $p->id }}">Edit</a>
         |
         <a class="btn btn-warning" href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
+=======
+        <a href="/pegawai/edit/{{ $p->id }}">Edit</a>
+        |
+        <a href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
+>>>>>>> dd924b92dd7a3638409bfe33ca5163ea6a9be96e
       </td>
     </tr>
     @endforeach
   </table>
+<<<<<<< HEAD
   </div>  
 
 </body>
 
+=======
+</body>
+
+</html>
+>>>>>>> dd924b92dd7a3638409bfe33ca5163ea6a9be96e
 
 @endsection
