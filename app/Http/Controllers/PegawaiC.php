@@ -25,7 +25,7 @@ class PegawaiC extends Controller
      */
     public function create()
     {
-        //
+        return view('pegawai.create');
     }
 
     /**

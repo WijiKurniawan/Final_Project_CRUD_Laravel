@@ -51,7 +51,7 @@
   </div>
 </nav>
 
-<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+<a href="/pegawai/create"> + Tambah Pegawai Baru</a>
 
 <br />
 <br />
