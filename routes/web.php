@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PegawaiC;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pegawai', function () {
-    return view('pegawai.index');
-});
+Route::get('/pegawai', [PegawaiC::class, 'index']);
 
 Route::get('/absen', function () {
     return view('absen.index');
