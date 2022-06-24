@@ -19,7 +19,8 @@ Route::get('/', function () {
 });
 
 Route::resource('pegawai', PegawaiC::class);
-
+Route::get('/pegawai/create', [PegawaiC::class, 'create']);
+Route::post('/pegawai/store', [PegawaiC::class, 'store']);
 
 // Route::get('/pegawai', [PegawaiC::class, 'index']);
 // Route::get('/pegawai', [JabatanC::class, 'index']);
