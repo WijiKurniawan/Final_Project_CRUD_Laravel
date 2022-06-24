@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PegawaiC;
+use Illuminate\Session\Store;
+
 // use App\Http\Controllers\JabatanC;
 // use App\Http\Controllers\AbsenC;
 // use App\Http\Controllers\LemburC;
@@ -17,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('pegawai', PegawaiC::class);
+
 
 // Route::get('/pegawai', [PegawaiC::class, 'index']);
 // Route::get('/pegawai', [JabatanC::class, 'index']);
