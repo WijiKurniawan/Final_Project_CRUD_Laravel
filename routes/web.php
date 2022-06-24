@@ -16,7 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pegawai', [PegawaiC::class, 'index']);
+Route::resource('pegawai', PegawaiC::class);
+
+// Route::get('/pegawai', [PegawaiC::class, 'index']);
 // Route::get('/pegawai', [JabatanC::class, 'index']);
 // Route::get('/pegawai', [AbsenC::class, 'index']);
 // Route::get('/pegawai', [LemburC::class, 'index']);
