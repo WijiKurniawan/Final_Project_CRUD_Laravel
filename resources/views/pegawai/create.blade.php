@@ -44,7 +44,7 @@
         </div>
 
 
-        <input type="submit" name="submit" value="Simpan">
+        <input type="submit" name="submit" class="btn btn-primary" value="Simpan">
 
 
 

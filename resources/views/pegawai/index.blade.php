@@ -94,9 +94,13 @@
           <td>{{$p->JenisKelamin}}</td>
           <td>{{$p->NoHP}}</td>
           <td>
-            <a class="btn btn-danger" href="/pegawai/edit/{{ $p->id }}">Edit</a>
-            |
-            <a class="btn btn-warning" href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
+            <a class="btn btn-warning" href="/pegawai/edit/{{ $p->id }}">Edit</a>
+            <form action="/pegawai/{{$p->id}}" method="POST">
+              <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
+              @csrf
+              @method('delete')
+              <input type="submit" class="btn btn-danger" value="Delete">
+            </form>
           </td>
         </tr>
         @endforeach

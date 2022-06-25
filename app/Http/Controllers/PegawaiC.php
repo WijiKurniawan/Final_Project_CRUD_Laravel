@@ -76,7 +76,9 @@ class PegawaiC extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $pegawai = Pegawai::find($id);
+        $pegawai->update($request->except(['_token', 'submit']));
+        return redirect('/pegawai');
     }
 
     /**
@@ -87,6 +89,11 @@ class PegawaiC extends Controller
      */
     public function destroy($id)
     {
-        //
+        //1 data yang di ambil pilih dlu
+        $pegawai = Pegawai::find($id);
+        //2 masukkan perintah delete
+        $pegawai->delete();
+        //3 redirect
+        return redirect('/pegawai');
     }
 }

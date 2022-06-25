@@ -6,7 +6,8 @@
 
 <div class="container">
     <h1>Halaman Edit Data Pegawai</h1>
-    <form action="/pegawai/store" method="POST">
+    <form action="/pegawai/{{$pegawai->id}}" method="POST">
+        @method('put')
         @csrf
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">NIP</label>
@@ -34,18 +35,18 @@
         </div>
         <select class="form-select" name="JenisKelamin"><br>
             <option value="">Pilih Jenis Kelamin</option>
-            <option value="L" @if($pegawai->JenisKelamin == "L") selected >Laki Laki</option>
-            <option value="P">Perempuan</option>
+            <option value="L" @if($pegawai->JenisKelamin == "L") selected @endif>Laki Laki</option>
+            <option value="L" @if($pegawai->JenisKelamin == "P") selected @endif>Laki Laki</option>
         </select><br>
 
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nomor HP</label>
-            <input type="text" name="NoHP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" name="NoHP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->NoHP}}">
         </div>
 
 
-        <input type="submit" name="submit" value="Simpan">
+        <input type="submit" name="submit" class="btn btn-primary" value="Simpan">
 
 
 
