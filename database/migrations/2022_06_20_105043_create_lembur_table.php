@@ -16,6 +16,7 @@ class CreateLemburTable extends Migration
         Schema::create('lembur', function (Blueprint $table) {
             $table->id();
             $table->text('NIP');
+            $table->text('Nama');
             $table->text('Tanggal');
             $table->text('JamLembur');
             $table->timestamps();

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<!-- <div class ="container">
+    <div class ="container">
     <h1>Halaman create</h1>
     <form action="/pegawai/store" method="POST">
     @csrf
@@ -44,14 +44,11 @@
     </div>
     
 
-    
-    
-    
     <input type="submit" name="submit" value="Simpan"> -->
 
     
 
-        <form action="/pegawai/store" method ="POST">
+        <!-- <form action="/pegawai/store" method ="POST">
         @csrf
         <input type="text" name="NIP" placeholder="NIP"><br>
         <input type="text" name="Nama" placeholder="Nama"><br>
@@ -66,11 +63,11 @@
             </select><br>
         <input type="text" name="NoHP" placeholder="Nomor HP"><br>
         <input type="submit" name="submit" value="Simpan">
-        </form>
+        </form> -->
         
         
 
-    <!-- </form>
+     </form>
 </div> -->
 
 @endsection
