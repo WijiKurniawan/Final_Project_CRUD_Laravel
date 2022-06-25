@@ -11,28 +11,20 @@ use Illuminate\Session\Store;
 // use App\Http\Controllers\Pengalaman_kerjaC;
 // use App\Http\Controllers\Riwayat_jabatanC;
 
-
-
-
+//Route login start
 Route::get('/', function () {
     return view('welcome');
 });
 
+//Route pegawai start
 Route::get('/pegawai', [PegawaiC::class, 'index']);
 Route::get('/pegawai/create', [PegawaiC::class, 'create']);
 Route::post('/pegawai/store', [PegawaiC::class, 'store']);
-
-// Route::get('/pegawai', [PegawaiC::class, 'index']);
-// Route::get('/pegawai', [JabatanC::class, 'index']);
-// Route::get('/pegawai', [AbsenC::class, 'index']);
-// Route::get('/pegawai', [LemburC::class, 'index']);
-// Route::get('/pegawai', [Pendidikan_pegawaiC::class, 'index']);
-// Route::get('/pegawai', [Pengalaman_kerjaC::class, 'index']);
-// Route::get('/pegawai', [Riwayat_jabatanC::class, 'index']);
+Route::get('/pegawai/edit/{id}', [PegawaiC::class, 'edit']); //pakai get karena baru nampilkan form id utk parameter
 
 
 
-
+//Route Absen strat
 Route::get('/absen', function () {
     return view('absen.index');
 });
@@ -56,3 +48,12 @@ Route::get('/pendidikan', function () {
 Route::get('/pengalamankerja', function () {
     return view('pengalamankerja.index');
 });
+
+
+// Route::get('/pegawai', [PegawaiC::class, 'index']);
+// Route::get('/pegawai', [JabatanC::class, 'index']);
+// Route::get('/pegawai', [AbsenC::class, 'index']);
+// Route::get('/pegawai', [LemburC::class, 'index']);
+// Route::get('/pegawai', [Pendidikan_pegawaiC::class, 'index']);
+// Route::get('/pegawai', [Pengalaman_kerjaC::class, 'index']);
+// Route::get('/pegawai', [Riwayat_jabatanC::class, 'index']);

@@ -60,7 +60,11 @@ class PegawaiC extends Controller
      */
     public function edit($id)
     {
-        //
+        // dd($id);
+        $pegawai = Pegawai::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
+        // dd($pegawai);
+        return view('pegawai.edit', compact(['pegawai'])); //lempar var. $pegawai ke halaman view
+
     }
 
     /**

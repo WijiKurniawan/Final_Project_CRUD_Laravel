@@ -5,38 +5,39 @@
 @section('content')
 
 <div class="container">
-    <h1>Halaman Tambah Data Pegawai</h1>
+    <h1>Halaman Edit Data Pegawai</h1>
     <form action="/pegawai/store" method="POST">
         @csrf
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">NIP</label>
-            <input type="text" name="NIP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" name="NIP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->NIP}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nama</label>
-            <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->Nama}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Alamat</label>
-            <input type="text" name="Alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" name="Alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->Alamat}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Tempat Lahir</label>
-            <input type="text" name="TempatLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" name="TempatLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->TempatLahir}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
-            <input type="date" name="TanggalLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="date" name="TanggalLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->TanggalLahir}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Agama</label>
-            <input type="text" name="Agama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" name="Agama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->Agama}}">
         </div>
         <select class="form-select" name="JenisKelamin"><br>
             <option value="">Pilih Jenis Kelamin</option>
             <option value="L">Laki Laki</option>
             <option value="P">Perempuan</option>
         </select><br>
+
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nomor HP</label>
