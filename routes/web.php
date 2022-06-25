@@ -23,6 +23,7 @@ Route::post('/pegawai/store', [PegawaiC::class, 'store']);
 Route::get('/pegawai/edit/{id}', [PegawaiC::class, 'edit']); //pakai get karena baru nampilkan form id utk parameter
 Route::put('/pegawai/{id}', [PegawaiC::class, 'update']);
 Route::delete('/pegawai/{id}', [PegawaiC::class, 'destroy']);
+//  Route pegawai End
 
 
 //Route Absen strat
