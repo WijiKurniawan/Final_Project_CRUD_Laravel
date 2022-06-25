@@ -34,7 +34,7 @@
         </div>
         <select class="form-select" name="JenisKelamin"><br>
             <option value="">Pilih Jenis Kelamin</option>
-            <option value="L">Laki Laki</option>
+            <option value="L" @if($pegawai->JenisKelamin == "L") selected >Laki Laki</option>
             <option value="P">Perempuan</option>
         </select><br>
 
