@@ -38,7 +38,7 @@ class PegawaiC extends Controller
     {
         // dd($request->except(['_token','submit']));
         Pegawai::create($request->except(['_token', 'submit']));
-        return redirect ('/pegawai');
+        return redirect('/pegawai'); //agar kembali lagi ke halaman pegawai.index
     }
 
     /**

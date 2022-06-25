@@ -66,44 +66,44 @@
   <br />
   <br />
 
-<body>
-  <div class="container">
-   <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
-  <table class="table table-hover">
-    <tr>
-      <th>id</th>
-      <th>NIP</th>
-      <th>Nama</th>
-      <th>Alamat</th>
-      <th>TempatLahir</th>
-      <th>TanggalLahir</th>
-      <th>Agama</th>
-      <th>Jenis Kelamin</th>
-      <th>NoHP</th>
-      <th>Opsi</th>
-    </tr>
-    @foreach($pegawai as $p)
-    <tr>
-      <td>{{$p->id}}</td>
-      <td>{{$p->NIP}}</td>
-      <td>{{$p->Nama}}</td>
-      <td>{{$p->Alamat}}</td>
-      <td>{{$p->TempatLahir}}</td>
-      <td>{{$p->TanggalLahir}}</td>
-      <td>{{$p->Agama}}</td>
-      <td>{{$p->JenisKelamin}}</td>
-      <td>{{$p->NoHP}}</td>
-      <td>
-        <a class="btn btn-danger" href="/pegawai/edit/{{ $p->id }}">Edit</a>
-        |
-        <a class="btn btn-warning" href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
-      </td>
-    </tr>
-    @endforeach
-  </table>
-  </div>  
+  <body>
+    <div class="container">
+      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
+      <table class="table table-hover">
+        <tr>
+          <th>id</th>
+          <th>NIP</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>TempatLahir</th>
+          <th>TanggalLahir</th>
+          <th>Agama</th>
+          <th>Jenis Kelamin</th>
+          <th>No.HP</th>
+          <th>Opsi</th>
+        </tr>
+        @foreach($pegawai as $p)
+        <tr>
+          <td>{{$p->id}}</td>
+          <td>{{$p->NIP}}</td>
+          <td>{{$p->Nama}}</td>
+          <td>{{$p->Alamat}}</td>
+          <td>{{$p->TempatLahir}}</td>
+          <td>{{$p->TanggalLahir}}</td>
+          <td>{{$p->Agama}}</td>
+          <td>{{$p->JenisKelamin}}</td>
+          <td>{{$p->NoHP}}</td>
+          <td>
+            <a class="btn btn-danger" href="/pegawai/edit/{{ $p->id }}">Edit</a>
+            |
+            <a class="btn btn-warning" href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
+          </td>
+        </tr>
+        @endforeach
+      </table>
+    </div>
 
-</body>
+  </body>
 
 
-@endsection
+  @endsection

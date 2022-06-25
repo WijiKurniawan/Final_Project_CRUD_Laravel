@@ -4,49 +4,49 @@
 
 @section('content')
 
-    <div class ="container">
+<div class="container">
     <h1>Halaman create</h1>
     <form action="/pegawai/store" method="POST">
-    @csrf
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">NIP</label>
-        <input type="text" name="NIP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nama</label>
-        <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Alamat</label>
-        <input type="text" name="Alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">TempatLahir</label>
-        <input type="text" name="TempatLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">TanggalLahir</label>
-        <input type="date" name="TanggalLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Agama</label>
-        <input type="text" name="Agama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <select class= "form-select" name="JenisKelamin"><br>
-                <option value="">Pilih Jenis Kelamin</option>
-                <option value="L">Laki Laki</option>
-                <option value="P">Perempuan</option>
-            </select><br>
-            
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">NoHP</label>
-        <input type="text" name="NoHP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    
+        @csrf
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">NIP</label>
+            <input type="text" name="NIP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nama</label>
+            <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Alamat</label>
+            <input type="text" name="Alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tempat Lahir</label>
+            <input type="text" name="TempatLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
+            <input type="date" name="TanggalLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Agama</label>
+            <input type="text" name="Agama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <select class="form-select" name="JenisKelamin"><br>
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="L">Laki Laki</option>
+            <option value="P">Perempuan</option>
+        </select><br>
 
-    <input type="submit" name="submit" value="Simpan"> -->
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nomor HP</label>
+            <input type="text" name="NoHP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
 
-    
+
+        <input type="submit" name="submit" value="Simpan">
+
+
 
         <!-- <form action="/pegawai/store" method ="POST">
         @csrf
@@ -64,10 +64,10 @@
         <input type="text" name="NoHP" placeholder="Nomor HP"><br>
         <input type="submit" name="submit" value="Simpan">
         </form> -->
-        
-        
 
-     </form>
-</div> -->
+
+
+    </form>
+</div>
 
 @endsection
