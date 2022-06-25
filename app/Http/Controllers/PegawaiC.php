@@ -23,10 +23,10 @@ class PegawaiC extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function create()
-    // {
-    //     return view('pegawai.create');
-    // }
+    public function create()
+    {
+        return view('pegawai.create');
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -34,11 +34,12 @@ class PegawaiC extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    // public function store(Request $request)
-    // {
-    //     // dd($request->all());
-    //     Pegawai::create($request->except(['_token', 'submit']));
-    // }
+    public function store(Request $request)
+    {
+        // dd($request->except(['_token','submit']));
+        Pegawai::create($request->except(['_token', 'submit']));
+        return redirect ('/pegawai');
+    }
 
     /**
      * Display the specified resource.
