@@ -17,12 +17,15 @@ Route::get('/', function () {
 });
 
 //Route pegawai start
-Route::get('/pegawai', [PegawaiC::class, 'index']);
-Route::get('/pegawai/create', [PegawaiC::class, 'create']);
-Route::post('/pegawai/store', [PegawaiC::class, 'store']);
-Route::get('/pegawai/edit/{id}', [PegawaiC::class, 'edit']); //pakai get karena baru nampilkan form id utk parameter
-Route::put('/pegawai/{id}', [PegawaiC::class, 'update']);
-Route::delete('/pegawai/{id}', [PegawaiC::class, 'destroy']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/pegawai', [PegawaiC::class, 'index']);
+    Route::get('/pegawai/create', [PegawaiC::class, 'create']);
+    Route::post('/pegawai/store', [PegawaiC::class, 'store']);
+    Route::get('/pegawai/edit/{id}', [PegawaiC::class, 'edit']); //pakai get karena baru nampilkan form id utk parameter
+    Route::put('/pegawai/{id}', [PegawaiC::class, 'update']);
+    Route::delete('/pegawai/{id}', [PegawaiC::class, 'destroy']);
+});
+
 //  Route pegawai End
 
 
@@ -59,3 +62,7 @@ Route::get('/pengalamankerja', function () {
 // Route::get('/pegawai', [Pendidikan_pegawaiC::class, 'index']);
 // Route::get('/pegawai', [Pengalaman_kerjaC::class, 'index']);
 // Route::get('/pegawai', [Riwayat_jabatanC::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
