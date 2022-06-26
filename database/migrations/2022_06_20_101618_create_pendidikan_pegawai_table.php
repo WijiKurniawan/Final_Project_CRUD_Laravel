@@ -15,7 +15,6 @@ class CreatePendidikanPegawaiTable extends Migration
     {
         Schema::create('pendidikan_pegawai', function (Blueprint $table) {
             $table->id();
-            $table->text('NIP');
             $table->text('Nama');
             $table->text('Pendidikan');
             $table->text('NamaInstansi');

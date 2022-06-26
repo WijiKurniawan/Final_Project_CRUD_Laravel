@@ -15,7 +15,6 @@ class CreatePengalamanKerjaTable extends Migration
     {
         Schema::create('pengalaman_kerja', function (Blueprint $table) {
             $table->id();
-            $table->text('NIP');
             $table->text('Nama');
             $table->text('NamaPerusahaan');
             $table->text('Tahun');
