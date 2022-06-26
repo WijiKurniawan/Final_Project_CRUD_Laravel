@@ -71,7 +71,7 @@
       <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
       <table class="table table-hover">
         <tr>
-          <th>id</th>
+          <th>NIP</th>
           <th>Nama</th>
           <th>Alamat</th>
           <th>TempatLahir</th>
