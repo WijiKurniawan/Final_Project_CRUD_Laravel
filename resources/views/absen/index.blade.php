@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title','absen')
 
@@ -40,36 +40,35 @@
     </div>
   </div>
 </nav>
-<br>
-<br>
-<body>
+
+<br />
+  
+
+  <body>
     <div class="container">
-      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Data Absen</a>
+      <a class="btn btn-primary" href="/absen/create"> + Tambah Data Absen Baru</a>
+      <br>
+      <br>
       <table class="table table-hover">
         <tr>
           <th>NIP</th>
           <th>Nama</th>
-          <th>Alamat</th>
-          <th>TempatLahir</th>
-          <th>TanggalLahir</th>
-          <th>Agama</th>
-          <th>Jenis Kelamin</th>
-          <th>No.HP</th>
-          <th>Opsi</th>
+          <th>Jumlah Hadir</th>
+          <th>Jumlah Sakit</th>
+          <th>Jumlah Izin</th>
+          <th>Jumlah Tanpa Keterangan</th>
         </tr>
-        @foreach($pegawai as $p)
+        @foreach($absen as $a)
         <tr>
-          <td>{{$p->id}}</td>
-          <td>{{$p->Nama}}</td>
-          <td>{{$p->Alamat}}</td>
-          <td>{{$p->TempatLahir}}</td>
-          <td>{{$p->TanggalLahir}}</td>
-          <td>{{$p->Agama}}</td>
-          <td>{{$p->JenisKelamin}}</td>
-          <td>{{$p->NoHP}}</td>
+          <td>{{$a->id}}</td>
+          <td>{{$a->Nama}}</td>
+          <td>{{$a->JumlahHadir}}</td>
+          <td>{{$a->JumlahSakit}}</td>
+          <td>{{$a->JumlahIzin}}</td>
+          <td>{{$a->JumlahTanpaKeterangan}}</td>
           <td>
-            <a class="btn btn-warning" href="/pegawai/edit/{{ $p->id }}">Edit</a>
-            <form action="/pegawai/{{$p->id}}" method="POST">
+            <a class="btn btn-warning" href="/pegawai/edit/{{ $a->id }}">Edit</a>
+            <form action="/absen/{{$a->id}}" method="POST">
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
               @csrf
               @method('delete')

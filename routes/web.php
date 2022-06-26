@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PegawaiC;
 use Illuminate\Session\Store;
+use App\Http\Controllers\AbsenC;
 
 // use App\Http\Controllers\JabatanC;
-// use App\Http\Controllers\AbsenC;
 // use App\Http\Controllers\LemburC;
 // use App\Http\Controllers\Pendidikan_pegawaiC;
 // use App\Http\Controllers\Pengalaman_kerjaC;
@@ -25,15 +25,13 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/pegawai/{id}', [PegawaiC::class, 'update']);
     Route::delete('/pegawai/{id}', [PegawaiC::class, 'destroy']);
 });
-
 //  Route pegawai End
 
 
 //Route Absen strat
-Route::get('/absen', function () {
-    return view('absen.index');
-});
+Route::get('/absen', [AbsenC::class, 'index']);
 
+//Route Absen end
 Route::get('/lembur', function () {
     return view('lembur.index');
 });

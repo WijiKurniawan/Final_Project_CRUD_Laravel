@@ -64,11 +64,13 @@
 
 
   <br />
-  <br />
+  
 
   <body>
     <div class="container">
       <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
+      <br>
+      <br>
       <table class="table table-hover">
         <tr>
           <th>NIP</th>

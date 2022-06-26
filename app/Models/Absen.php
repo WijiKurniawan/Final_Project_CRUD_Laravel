@@ -9,4 +9,6 @@ class Absen extends Model
 {
     use HasFactory;
     protected $table = 'absen';
+    protected $guarded = []; //boleh isi semua tidak ada yg tidak boleh di isi (tidak ada yg dijaga)
 }
+
