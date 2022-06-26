@@ -17,7 +17,7 @@ class CreateLemburTable extends Migration
             $table->id();
             $table->text('NIP');
             $table->text('Nama');
-            $table->text('Tanggal');
+            $table->date('Tanggal');
             $table->text('JamLembur');
             $table->timestamps();
         });
