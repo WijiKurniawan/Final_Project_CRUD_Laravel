@@ -15,7 +15,6 @@ class CreatePegawaiTable extends Migration
     {
         Schema::create('pegawai', function (Blueprint $table) {
             $table->id();
-            $table->text('NIP');
             $table->text('Nama');
             $table->text('Alamat');
             $table->text('TempatLahir');

@@ -72,7 +72,6 @@
       <table class="table table-hover">
         <tr>
           <th>id</th>
-          <th>NIP</th>
           <th>Nama</th>
           <th>Alamat</th>
           <th>TempatLahir</th>
@@ -85,7 +84,6 @@
         @foreach($pegawai as $p)
         <tr>
           <td>{{$p->id}}</td>
-          <td>{{$p->NIP}}</td>
           <td>{{$p->Nama}}</td>
           <td>{{$p->Alamat}}</td>
           <td>{{$p->TempatLahir}}</td>
