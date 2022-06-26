@@ -15,7 +15,6 @@ class CreateJabatanTable extends Migration
     {
         Schema::create('jabatan', function (Blueprint $table) {
             $table->id();
-            $table->text('NIP');
             $table->text('Nama');
             $table->text('KodeJabatan');
             $table->text('NamaJabatan');
