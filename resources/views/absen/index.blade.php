@@ -34,10 +34,52 @@
           </ul>
         </li>
         <li class="nav-item">
-          
+
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<br>
+<br>
+<body>
+    <div class="container">
+      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Data Absen</a>
+      <table class="table table-hover">
+        <tr>
+          <th>NIP</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>TempatLahir</th>
+          <th>TanggalLahir</th>
+          <th>Agama</th>
+          <th>Jenis Kelamin</th>
+          <th>No.HP</th>
+          <th>Opsi</th>
+        </tr>
+        @foreach($pegawai as $p)
+        <tr>
+          <td>{{$p->id}}</td>
+          <td>{{$p->Nama}}</td>
+          <td>{{$p->Alamat}}</td>
+          <td>{{$p->TempatLahir}}</td>
+          <td>{{$p->TanggalLahir}}</td>
+          <td>{{$p->Agama}}</td>
+          <td>{{$p->JenisKelamin}}</td>
+          <td>{{$p->NoHP}}</td>
+          <td>
+            <a class="btn btn-warning" href="/pegawai/edit/{{ $p->id }}">Edit</a>
+            <form action="/pegawai/{{$p->id}}" method="POST">
+              <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
+              @csrf
+              @method('delete')
+              <input type="submit" class="btn btn-danger" value="Delete">
+            </form>
+          </td>
+        </tr>
+        @endforeach
+      </table>
+    </div>
+
+  </body>
 @endsection
