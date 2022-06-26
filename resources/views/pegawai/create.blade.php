@@ -9,38 +9,41 @@
     <form action="/pegawai/store" method="POST">
         @csrf
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">NIP</label>
-            <input type="text" name="NIP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">NIP</label>
+            <input type="text" name="NIP" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nama</label>
-            <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">Nama</label>
+            <input type="text" name="Nama" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Alamat</label>
-            <input type="text" name="Alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">Alamat</label>
+            <input type="text" name="Alamat" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Tempat Lahir</label>
-            <input type="text" name="TempatLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">Tempat Lahir</label>
+            <input type="text" name="TempatLahir" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Tanggal Lahir</label>
-            <input type="date" name="TanggalLahir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">Tanggal Lahir</label>
+            <input type="date" name="TanggalLahir" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Agama</label>
-            <input type="text" name="Agama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">Agama</label>
+            <input type="text" name="Agama" class="form-control" id="createPegawai" aria-describedby="">
         </div>
-        <select class="form-select" name="JenisKelamin"><br>
+        <div>
+        <label for="createPegawai">Jenis Kelamin</label>
+        <br>
+        <select class="form-select" name="JenisKelamin" id="createPegawai"><br>
             <option value="">Pilih Jenis Kelamin</option>
             <option value="L">Laki Laki</option>
             <option value="P">Perempuan</option>
         </select><br>
-
+        </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nomor HP</label>
-            <input type="text" name="NoHP" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="createPegawai" class="form-label">Nomor HP</label>
+            <input type="text" name="NoHP" class="form-control" id="createPegawai" aria-describedby="">
         </div>
 
 
