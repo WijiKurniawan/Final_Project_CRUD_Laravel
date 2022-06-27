@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PegawaiC;
 use Illuminate\Session\Store;
 use App\Http\Controllers\AbsenC;
+use App\Http\Controllers\JabatanC;
 
 // use App\Http\Controllers\JabatanC;
 // use App\Http\Controllers\LemburC;
@@ -37,9 +38,25 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/absen/{id}', [AbsenC::class, 'update']);
     Route::delete('/absen/{id}', [AbsenC::class, 'destroy']);
 });
-
-
 //Route Absen end
+
+// Route Jabatan strat
+Route::middleware(['auth'])->group(function () {
+    Route::get('/jabatan', [JabatanC::class, 'index']);
+    Route::get('/jabatan/create', [JabatanC::class, 'create']);
+    Route::post('/absen/store', [JabatanC::class, 'store']);
+    Route::get('/absen/edit/{id}', [JabatanC::class, 'edit']);
+    Route::put('/absen/{id}', [JabatanC::class, 'update']);
+    Route::delete('/absen/{id}', [JabatanC::class, 'destroy']);
+});
+//Route Jabatan end
+
+
+
+
+
+
+
 Route::get('/lembur', function () {
     return view('lembur.index');
 });
