@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <h1>Halaman Tambah Data Pegawai</h1>
+    <h1 class="text-center">Halaman Tambah Data Pegawai</h1>
     <form action="/pegawai/store" method="POST">
         @csrf
         <div class="mb-3">
