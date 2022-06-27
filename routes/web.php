@@ -87,12 +87,12 @@ Route::middleware(['auth'])->group(function () {
 
 // route riwayat jabatan strat
 Route::middleware(['auth'])->group(function () {
-    Route::get('/riwayatjabatan', [Riwayat_jabatanC::class, 'index']);
-    Route::get('/riwayatjabatan/create', [Riwayat_jabatanC::class, 'create']);
-    Route::post('/riwayatjabatan/store', [Riwayat_jabatanC::class, 'store']);
-    Route::get('/riwayatjabatan/edit/{id}', [Riwayat_jabatanC::class, 'edit']);
-    Route::put('/riwayatjabatan/{id}', [Riwayat_jabatanC::class, 'update']);
-    Route::delete('/riwayatjabatan/{id}', [Riwayat_jabatanC::class, 'destroy']);
+    Route::get('/riwayat_jabatan', [Riwayat_jabatanC::class, 'index']);
+    Route::get('/riwayat_jabatan/create', [Riwayat_jabatanC::class, 'create']);
+    Route::post('/riwayat_jabatan/store', [Riwayat_jabatanC::class, 'store']);
+    Route::get('/riwayat_jabatan/edit/{id}', [Riwayat_jabatanC::class, 'edit']);
+    Route::put('/riwayat_jabatan/{id}', [Riwayat_jabatanC::class, 'update']);
+    Route::delete('/riwayat_jabatan/{id}', [Riwayat_jabatanC::class, 'destroy']);
 });
 //route riwayatjabatan end
 
