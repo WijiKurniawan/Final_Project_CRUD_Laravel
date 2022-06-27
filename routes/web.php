@@ -29,12 +29,15 @@ Route::middleware(['auth'])->group(function () {
 
 
 //Route Absen strat
-Route::get('/absen', [AbsenC::class, 'index']);
-Route::get('/absen/create', [AbsenC::class, 'create']);
-Route::post('/absen/store', [AbsenC::class, 'store']);
-Route::get('/absen/edit/{id}', [AbsenC::class, 'edit']); //pakai get karena baru nampilkan form id utk parameter
-Route::put('/absen/{id}', [AbsenC::class, 'update']);
-Route::delete('/absen/{id}', [AbsenC::class, 'destroy']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/absen', [AbsenC::class, 'index']);
+    Route::get('/absen/create', [AbsenC::class, 'create']);
+    Route::post('/absen/store', [AbsenC::class, 'store']);
+    Route::get('/absen/edit/{id}', [AbsenC::class, 'edit']); //pakai get karena baru nampilkan form id utk parameter
+    Route::put('/absen/{id}', [AbsenC::class, 'update']);
+    Route::delete('/absen/{id}', [AbsenC::class, 'destroy']);
+});
+
 
 //Route Absen end
 Route::get('/lembur', function () {
