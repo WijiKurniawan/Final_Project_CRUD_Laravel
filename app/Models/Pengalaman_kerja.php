@@ -9,4 +9,5 @@ class Pengalaman_kerja extends Model
 {
     use HasFactory;
     protected $table = 'Pengalaman_kerja';
+    protected $guarded = [];
 }
