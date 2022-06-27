@@ -5,6 +5,8 @@ use App\Http\Controllers\PegawaiC;
 use Illuminate\Session\Store;
 use App\Http\Controllers\AbsenC;
 use App\Http\Controllers\JabatanC;
+use App\Http\Controllers\LemburC;
+
 
 // use App\Http\Controllers\JabatanC;
 // use App\Http\Controllers\LemburC;
@@ -44,13 +46,22 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/jabatan', [JabatanC::class, 'index']);
     Route::get('/jabatan/create', [JabatanC::class, 'create']);
-    Route::post('/absen/store', [JabatanC::class, 'store']);
-    Route::get('/absen/edit/{id}', [JabatanC::class, 'edit']);
-    Route::put('/absen/{id}', [JabatanC::class, 'update']);
-    Route::delete('/absen/{id}', [JabatanC::class, 'destroy']);
+    Route::post('/jabatan/store', [JabatanC::class, 'store']);
+    Route::get('/jabatan/edit/{id}', [JabatanC::class, 'edit']);
+    Route::put('/jabatan/{id}', [JabatanC::class, 'update']);
+    Route::delete('/jabatan/{id}', [JabatanC::class, 'destroy']);
 });
 //Route Jabatan end
 
+//Route Lembur start
+Route::middleware(['auth'])->group(function () {
+    Route::get('/lembur', [LemburC::class, 'index']);
+    Route::get('/lembur/create', [LemburC::class, 'create']);
+    Route::post('/lembur/store', [LemburC::class, 'store']);
+    Route::get('/lembur/edit/{id}', [LemburC::class, 'edit']);
+    Route::put('/lembur/{id}', [LemburC::class, 'update']);
+    Route::delete('/lembur/{id}', [LemburC::class, 'destroy']);
+});
 
 
 
