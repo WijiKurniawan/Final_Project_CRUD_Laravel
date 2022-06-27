@@ -91,7 +91,6 @@
                             </li>
                         @endguest
                     </ul>
-
           <li class="nav-item">
 
           </li>
@@ -132,12 +131,12 @@
           <td>{{$p->JenisKelamin}}</td>
           <td>{{$p->NoHP}}</td>
           <td>
-            <a class="btn btn-warning" href="/pegawai/edit/{{ $p->id }}">Edit</a> <a>|</a> <input type="submit" class="btn btn-danger" value="Delete">
-            <form action="/pegawai/{{$p->id}}" method="POST">
+            
+            <form action="/pegawai/{{$p->id}}" method="POST"><a class="btn btn-warning" href="/pegawai/edit/{{ $p->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
               @csrf
               @method('delete')
-              
+              <input type="submit" class="btn btn-danger" value="Delete">
             </form>
           </td>
         </tr>

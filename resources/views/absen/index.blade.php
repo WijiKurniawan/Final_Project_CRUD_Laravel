@@ -108,12 +108,11 @@
           <td>{{$a->JumlahIzin}}</td>
           <td>{{$a->JumlahTanpaKeterangan}}</td>
           <td>
-            <a class="btn btn-warning" href="/absen/edit/{{ $a->id }}">Edit</a> <a>|</a> <input type="submit" class="btn btn-danger" value="Delete">
-            <form action="/absen/{{$a->id}}" method="POST">
+          <form action="/absen/{{$a->id}}" method="POST"><a class="btn btn-warning" href="/absen/edit/{{ $a->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
               @csrf
               @method('delete')
-              
+              <input type="submit" class="btn btn-danger" value="Delete">
             </form>
           </td>
         </tr>
