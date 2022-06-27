@@ -8,7 +8,7 @@ use App\Http\Controllers\AbsenC;
 use App\Http\Controllers\JabatanC;
 use App\Http\Controllers\LemburC;
 use App\Http\Controllers\Pendidikan_pegawaiC;
-
+use App\Http\Controllers\Pengalaman_kerjaC;
 
 
 //Route login start
@@ -70,8 +70,18 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/pendidikan/{id}', [Pendidikan_pegawaiC::class, 'update']);
     Route::delete('/pendidikan/{id}', [Pendidikan_pegawaiC::class, 'destroy']);
 });
-//route pendidikan pegawai ens
+//route pendidikan pegawai end
 
+//route pengalaman kerja start
+Route::middleware(['auth'])->group(function () {
+    Route::get('/pengalamankerja', [Pengalaman_kerjaC::class, 'index']);
+    Route::get('/pengalamankerja/create', [Pengalaman_kerjaC::class, 'create']);
+    Route::post('/pengalamankerja/store', [Pengalaman_kerjaC::class, 'store']);
+    Route::get('/pengalamankerja/edit/{id}', [Pengalaman_kerjaC::class, 'edit']);
+    Route::put('/pengalmankerja/{id}', [Pengalaman_kerjaC::class, 'update']);
+    Route::delete('/pengalamankerja/{id}', [Pengalaman_kerjaC::class, 'destroy']);
+});
+// route penglaman kerja end
 
 
 
@@ -81,13 +91,7 @@ Route::get('/riwayatjabatan', function () {
     return view('riwayatjabatan.index');
 });
 
-Route::get('/pendidikan', function () {
-    return view('pendidikan.index');
-});
 
-Route::get('/pengalamankerja', function () {
-    return view('pengalamankerja.index');
-});
 
 
 // Route::get('/pegawai', [PegawaiC::class, 'index']);
