@@ -5,8 +5,8 @@
 @section('content')
 
 <div class="container">
-    <h1>Halaman Edit Data Pegawai</h1>
-    <form action="/pegawai/{{$pegawai->id}}" method="POST">
+    <h1>Halaman Edit Data Jabatan</h1>
+    <form action="/jabatan/{{$jabatan->id}}" method="POST">
         @method('put')
         @csrf
         <div class="mb-3">

@@ -62,7 +62,7 @@ class JabatanC extends Controller
         // dd($id);
         $jabatan = Jabatan::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
         // dd($pegawai);
-        return view('jabtan.edit', compact(['jabatan'])); //lempar var. $pegawai ke halaman view
+        return view('jabatan.edit', compact(['jabatan'])); //lempar var. $pegawai ke halaman view
     }
 
     /**

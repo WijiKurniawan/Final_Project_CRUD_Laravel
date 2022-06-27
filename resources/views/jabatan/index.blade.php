@@ -85,7 +85,7 @@
 
   <body>
     <div class="container">
-      <a class="btn btn-primary" href="/jabatan/create"> + Tambah Pegawai Baru</a>
+      <a class="btn btn-primary" href="/jabatan/create"> + Tambah </a>
       <br>
       <br>
       <table class="table table-hover">
@@ -102,15 +102,17 @@
           <td>{{$j->Nama}}</td>
           <td>{{$j->KodeJabatan}}</td>
           <td>{{$j->NamaJabatan}}</td>
-        
+
+      <td>
             <form action="/jabatan/{{$j->id}}" method="POST"><a class="btn btn-warning" href="/jabatan/edit/{{ $j->id }}">Edit</a>
-              <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
-              @csrf
-              @method('delete')
-              <input type="submit" class="btn btn-danger" value="Delete">
+               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
+               @csrf
+               @method('delete')
+             <input type="submit" class="btn btn-danger" value="Delete">
             </form>
           </td>
         </tr>
+      </td>
         @endforeach
       </table>
     </div>
