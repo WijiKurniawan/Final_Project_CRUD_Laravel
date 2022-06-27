@@ -37,7 +37,7 @@ class AbsenC extends Controller
     public function store(Request $request)
     {
         Absen::create($request->except(['_token', 'submit']));
-        return redirect('/absen'); //agar kembali lagi ke halaman pegawai.index
+        return redirect('/absen'); //agar kembali lagi ke halaman absen.index
     }
 
     /**
