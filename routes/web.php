@@ -9,6 +9,8 @@ use App\Http\Controllers\JabatanC;
 use App\Http\Controllers\LemburC;
 use App\Http\Controllers\Pendidikan_pegawaiC;
 use App\Http\Controllers\Pengalaman_kerjaC;
+use App\Http\Controllers\Riwayat_jabatanC;
+
 
 
 //Route login start
@@ -83,13 +85,19 @@ Route::middleware(['auth'])->group(function () {
 });
 // route penglaman kerja end
 
-
-
-
-
-Route::get('/riwayatjabatan', function () {
-    return view('riwayatjabatan.index');
+// route riwayat jabatan strat
+Route::middleware(['auth'])->group(function () {
+    Route::get('/riwayatjabatan', [Riwayat_jabatanC::class, 'index']);
+    Route::get('/riwayatjabatan/create', [Riwayat_jabatanC::class, 'create']);
+    Route::post('/riwayatjabatan/store', [Riwayat_jabatanC::class, 'store']);
+    Route::get('/riwayatjabatan/edit/{id}', [Riwayat_jabatanC::class, 'edit']);
+    Route::put('/riwayatjabatan/{id}', [Riwayat_jabatanC::class, 'update']);
+    Route::delete('/riwayatjabatan/{id}', [Riwayat_jabatanC::class, 'destroy']);
 });
+//route riwayatjabatan end
+
+
+
 
 
 
