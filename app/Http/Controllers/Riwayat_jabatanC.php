@@ -14,8 +14,8 @@ class Riwayat_jabatanC extends Controller
      */
     public function index()
     {
-        $riwayatjabatan = Riwayat_jabatan::all(); //ambil semua data pada model absen dan simpan pada variable absen
-        return view('riwayatjabatan', compact(['riwayatjabatan'])); // agar variabell absen bisa di pakai di indeex absen
+        $riwayat_jabatan = Riwayat_jabatan::all(); //ambil semua data pada model absen dan simpan pada variable absen
+        return view('riwayat_jabatan.index', compact(['riwayat_jabatan'])); // agar variabell absen bisa di pakai di indeex absen
     }
 
     /**
@@ -25,7 +25,7 @@ class Riwayat_jabatanC extends Controller
      */
     public function create()
     {
-        return view('riwayatjabatan.create');
+        return view('riwayat_jabatan.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class Riwayat_jabatanC extends Controller
     public function store(Request $request)
     {
         Riwayat_jabatan::create($request->except(['_token', 'submit']));
-        return redirect('/riwayatjabatan'); //agar kembali lagi ke halaman jabatan.index
+        return redirect('/riwayat_jabatan'); //agar kembali lagi ke halaman jabatan.index
     }
 
     /**
@@ -59,9 +59,9 @@ class Riwayat_jabatanC extends Controller
      */
     public function edit($id)
     {
-        $riwayatjabatan = Riwayat_jabatan::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
+        $riwayat_jabatan = Riwayat_jabatan::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
         // dd($pegawai);
-        return view('riwayatjabatan.edit', compact(['riwayatjabatan'])); //lempar var. $pegawai ke halaman view
+        return view('riwayat_jabatan.edit', compact(['riwayat_jabatan'])); //lempar var. $pegawai ke halaman view
     }
 
     /**
@@ -73,9 +73,9 @@ class Riwayat_jabatanC extends Controller
      */
     public function update(Request $request, $id)
     {
-        $riwayatjabatan = Riwayat_jabatan::find($id);
-        $riwayatjabatan->update($request->except(['_token', 'submit']));
-        return redirect('/riwayatjabatan');
+        $riwayat_jabatan = Riwayat_jabatan::find($id);
+        $riwayat_jabatan->update($request->except(['_token', 'submit']));
+        return redirect('/riwayat_jabatan');
     }
 
     /**
@@ -87,10 +87,10 @@ class Riwayat_jabatanC extends Controller
     public function destroy($id)
     {
         //1 data yang di ambil pilih dlu
-        $riwayatjabatan = Riwayat_jabatan::find($id);
+        $riwayat_jabatan = Riwayat_jabatan::find($id);
         //2 masukkan perintah delete
-        $riwayatjabatan->delete();
+        $riwayat_jabatan->delete();
         //3 redirect
-        return redirect('/riwayatjabatan');
+        return redirect('/riwayat_jabatan');
     }
 }
