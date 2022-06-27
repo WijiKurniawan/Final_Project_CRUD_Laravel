@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Halaman Edit Lemburi</h1>
-    <form action="/pegawai/{{$pegawai->id}}" method="POST">
+    <form action="/lembur/{{$lembur->id}}" method="POST">
         @method('put')
         @csrf
         <div class="mb-3">
@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Tanggal</label>
-            <input type="text" name="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$lembur->Tanggal}}">
+            <input type="date" name="Tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$lembur->Tanggal}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Jam  Lembur</label>

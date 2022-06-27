@@ -85,7 +85,7 @@
 
   <body>
     <div class="container">
-      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
+      <a class="btn btn-primary" href="/jabatan/create"> + Tambah Pegawai Baru</a>
       <br>
       <br>
       <table class="table table-hover">
