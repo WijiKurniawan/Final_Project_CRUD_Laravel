@@ -98,10 +98,10 @@
         </tr>
         @foreach($jabatan as $j)
         <tr>
-          <td>{{$p->id}}</td>
-          <td>{{$p->Nama}}</td>
-          <td>{{$p->Kode Jabatan}}</td>
-          <td>{{$p->Nama Jabatan}}</td>
+          <td>{{$j->id}}</td>
+          <td>{{$j->Nama}}</td>
+          <td>{{$j->KodeJabatan}}</td>
+          <td>{{$j->NamaJabatan}}</td>
         
             <form action="/jabatan/{{$p->id}}" method="POST"><a class="btn btn-warning" href="/jabatan/edit/{{ $p->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
