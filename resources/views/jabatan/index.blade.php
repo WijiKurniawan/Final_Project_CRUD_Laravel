@@ -77,4 +77,44 @@
     </div>
   </div>
 </nav>
+
+<br>
+
+<br />
+  
+
+  <body>
+    <div class="container">
+      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
+      <br>
+      <br>
+      <table class="table table-hover">
+        <tr>
+          <th>id</th>
+          <th>Nama</th>
+          <th>Kode Jabatan</th>
+          <th>Nama Jabatan</th>
+          <th>Opsi</th>
+        </tr>
+        @foreach($jabatan as $j)
+        <tr>
+          <td>{{$p->id}}</td>
+          <td>{{$p->Nama}}</td>
+          <td>{{$p->Kode Jabatan}}</td>
+          <td>{{$p->Nama Jabatan}}</td>
+        
+            <form action="/jabatan/{{$p->id}}" method="POST"><a class="btn btn-warning" href="/jabatan/edit/{{ $p->id }}">Edit</a>
+              <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
+              @csrf
+              @method('delete')
+              <input type="submit" class="btn btn-danger" value="Delete">
+            </form>
+          </td>
+        </tr>
+        @endforeach
+      </table>
+    </div>
+
+  </body>
+
 @endsection

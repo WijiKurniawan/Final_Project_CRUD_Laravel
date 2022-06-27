@@ -19,11 +19,11 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Kode Jabatan</label>
-            <input type="text" name="KodeJabatan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->KodeJabatan}}">
+            <input type="text" name="KodeJabatan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$jabatan->KodeJabatan}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nama Jabatan</label>
-            <input type="text" name="NamaJabatan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pegawai->NamaJabatan}}">
+            <input type="text" name="NamaJabatan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$jabatan->NamaJabatan}}">
         </div>
 
 
