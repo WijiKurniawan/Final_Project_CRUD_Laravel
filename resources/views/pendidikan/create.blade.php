@@ -9,7 +9,7 @@
     <form action="/pegawai/store" method="POST">
         @csrf
         <div class="mb-3">
-            <label for="createPegawai" class="form-label">NIP</label>
+            <label for="createPegawai" class="form-label">id</label>
             <input type="text" name="id" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">

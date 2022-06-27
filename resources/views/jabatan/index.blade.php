@@ -103,7 +103,7 @@
           <td>{{$j->KodeJabatan}}</td>
           <td>{{$j->NamaJabatan}}</td>
         
-            <form action="/jabatan/{{$p->id}}" method="POST"><a class="btn btn-warning" href="/jabatan/edit/{{ $p->id }}">Edit</a>
+            <form action="/jabatan/{{$j->id}}" method="POST"><a class="btn btn-warning" href="/jabatan/edit/{{ $j->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
               @csrf
               @method('delete')

@@ -77,4 +77,45 @@
     </div>
   </div>
 </nav>
+
+<br>
+
+<body>
+    <div class="container">
+      <a class="btn btn-primary" href="/pendidikan/create"> + Tambah </a>
+      <br>
+      <br>
+      <table class="table table-hover">
+        <tr>
+          <th>id</th>
+          <th>Nama</th>
+          <th>Pendidikan</th>
+          <th>NamaInstansi</th>
+          <th>Jurusan</th>
+          <th>IPK</th>
+          <th>Opsi</th>
+        </tr>
+        @foreach($pendidikan as $pp)
+        <tr>
+          <td>{{$pp->id}}</td>
+          <td>{{$pp->Nama}}</td>
+          <td>{{$pp->Pendidikan}}</td>
+          <td>{{$pp->NamaInstansi}}</td>
+          <td>{{$pp->Jurusan}}</td>
+          <td>{{$pp->IPK}}</td>
+          <td>
+            
+            <form action="/pendidikan/{{$pp->id}}" method="POST"><a class="btn btn-warning" href="/pendidikan/edit/{{ $pp->id }}">Edit</a>
+              <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
+              @csrf
+              @method('delete')
+              <input type="submit" class="btn btn-danger" value="Delete">
+            </form>
+          </td>
+        </tr>
+        @endforeach
+      </table>
+    </div>
+
+  </body>
 @endsection

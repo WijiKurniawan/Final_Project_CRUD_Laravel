@@ -92,4 +92,41 @@
   </nav>
 
 </body>
+ 
+<br>
+
+<body>
+    <div class="container">
+      <a class="btn btn-primary" href="/lembur/create"> + Tambah </a>
+      <br>
+      <br>
+      <table class="table table-hover">
+        <tr>
+          <th>id</th>
+          <th>Nama</th>
+          <th>Tanggal</th>
+          <th>JamLembur</th>
+          <th>Opsi</th>
+        </tr>
+        @foreach($lembur as $l)
+        <tr>
+          <td>{{$l->id}}</td>
+          <td>{{$l->Nama}}</td>
+          <td>{{$l->Tanggal}}</td>
+          <td>{{$l->JamLembur}}</td>
+          <td>
+            
+            <form action="/lembur/{{$l->id}}" method="POST"><a class="btn btn-warning" href="/lembur/edit/{{ $l->id }}">Edit</a>
+              <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
+              @csrf
+              @method('delete')
+              <input type="submit" class="btn btn-danger" value="Delete">
+            </form>
+          </td>
+        </tr>
+        @endforeach
+      </table>
+    </div>
+
+  </body>
 @endsection
