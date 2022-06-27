@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Jumlah Hadir</label>
-            <input type="text" name="JumalahHadir" class="form-control" id="createPegawai" aria-describedby="">
+            <input type="text" name="JumlahHadir" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Jumlah Sakit</label>
@@ -26,7 +26,7 @@
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Jumlah Izin</label>
-            <input type="date" name="JumlahIzin" class="form-control" id="createPegawai" aria-describedby="">
+            <input type="text" name="JumlahIzin" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Jumlah Tanpa Keterangan</label>
