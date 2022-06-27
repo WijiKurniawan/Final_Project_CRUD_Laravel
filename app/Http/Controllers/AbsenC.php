@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Absen;//use model dulu
+use App\Models\Absen; //use model dulu
 use Illuminate\Http\Request;
 
 class AbsenC extends Controller
@@ -25,7 +25,7 @@ class AbsenC extends Controller
      */
     public function create()
     {
-        //
+        return view('absen.create');
     }
 
     /**
@@ -36,7 +36,8 @@ class AbsenC extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Absen::create($request->except(['_token', 'submit']));
+        return redirect('/absen'); //agar kembali lagi ke halaman pegawai.index
     }
 
     /**
@@ -58,7 +59,10 @@ class AbsenC extends Controller
      */
     public function edit($id)
     {
-        //
+        // dd($id);
+        $absen = Absen::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
+        // dd($pegawai);
+        return view('absen.edit', compact(['absen'])); //lempar var. $pegawai ke halaman view
     }
 
     /**
@@ -70,7 +74,9 @@ class AbsenC extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $absen = Absen::find($id);
+        $absen->update($request->except(['_token', 'submit']));
+        return redirect('/absen');
     }
 
     /**
@@ -81,6 +87,11 @@ class AbsenC extends Controller
      */
     public function destroy($id)
     {
-        //
+        //1 data yang di ambil pilih dlu
+        $absen = Absen::find($id);
+        //2 masukkan perintah delete
+        $absen->delete();
+        //3 redirect
+        return redirect('/absen');
     }
 }
