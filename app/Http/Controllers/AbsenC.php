@@ -1,5 +1,5 @@
 <?php
-
+//wiji gtg
 namespace App\Http\Controllers;
 
 use App\Models\Absen; //use model dulu
