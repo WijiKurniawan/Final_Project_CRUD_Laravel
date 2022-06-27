@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Models\Lembur;
+use App\Models\Pendidikan_pegawai;
 use Illuminate\Http\Request;
 
-class LemburC extends Controller
+class Pendidikan_pegawaiC extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,8 @@ class LemburC extends Controller
      */
     public function index()
     {
-        $lembur = Lembur::all(); //ambil semua data pada model absen dan simpan pada variable absen
-        return view('lembur.index', compact(['lembur'])); // agar variabell absen bisa di pakai di indeex absen
+        $pendidikan = Pendidikan_pegawai::all(); //ambil semua data pada model absen dan simpan pada variable absen
+        return view('pendidikan.index', compact(['pendidikan'])); // agar variabell absen bisa di pakai di indeex absen
     }
 
     /**
@@ -26,7 +25,7 @@ class LemburC extends Controller
      */
     public function create()
     {
-        return view('lembur.create');
+        return view('pendidikan.create');
     }
 
     /**
@@ -37,8 +36,8 @@ class LemburC extends Controller
      */
     public function store(Request $request)
     {
-        Lembur::create($request->except(['_token', 'submit']));
-        return redirect('/lembur'); //agar kembali lagi ke halaman jabatan.index
+        Pendidikan_pegawai::create($request->except(['_token', 'submit']));
+        return redirect('/pendidikan'); //agar kembali lagi ke halaman jabatan.index
     }
 
     /**
@@ -60,9 +59,9 @@ class LemburC extends Controller
      */
     public function edit($id)
     {
-        $lembur = Lembur::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
+        $pendidikan = Pendidikan_pegawai::find($id); //untuk tampil data di hal. edit, maka tambah variabel peg., Panggil tabel model Pegawai find(id) 
         // dd($pegawai);
-        return view('lembur.edit', compact(['lembur'])); //lempar var. $pegawai ke halaman view
+        return view('pendidikan.edit', compact(['pendidikan'])); //lempar var. $pegawai ke halaman view
     }
 
     /**
@@ -74,9 +73,9 @@ class LemburC extends Controller
      */
     public function update(Request $request, $id)
     {
-        $lembur = Lembur::find($id);
-        $lembur->update($request->except(['_token', 'submit']));
-        return redirect('/lembur');
+        $pendidikan = Pendidikan_pegawai::find($id);
+        $pendidikan->update($request->except(['_token', 'submit']));
+        return redirect('/pendidikan');
     }
 
     /**
@@ -88,10 +87,10 @@ class LemburC extends Controller
     public function destroy($id)
     {
         //1 data yang di ambil pilih dlu
-        $lembur = Lembur::find($id);
+        $pendidikan = Pendidikan_pegawai::find($id);
         //2 masukkan perintah delete
-        $lembur->delete();
+        $pendidikan->delete();
         //3 redirect
-        return redirect('/lembur');
+        return redirect('/pendidikan');
     }
 }

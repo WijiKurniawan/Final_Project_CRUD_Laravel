@@ -9,4 +9,5 @@ class Pendidikan_pegawai extends Model
 {
     use HasFactory;
     protected $table = 'pendidikan_pegawai';
+    protected $guarded = [];
 }
