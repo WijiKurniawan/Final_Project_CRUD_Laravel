@@ -101,6 +101,93 @@
     </div>
   </div>
 </nav>
+<br>
+<br>
+<br>
+<div class="row container-fluid"">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Pegawai</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
+        <a href="{{url('pegawai')}}" class="btn btn-primary">Telusuri</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Absen</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="{{url('absen')}}" class="btn btn-primary">Telusuri</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row container-fluid"">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Pendidikan Pegawai</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
+        <a href="{{url('pendidikan')}}" class="btn btn-primary">Halaman Pendidikan Pegawai</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lembur</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="{{url('lembur')}}" class="btn btn-primary">Halaman Lembur</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row container-fluid"">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">JABATAN</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
+        <a href="{{url('jabatan')}}" class="btn btn-primary">Halaman Riwayat Jabatan</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">RIWAYAT JABATAN</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="{{url('riwayat_jabatan')}}" class="btn btn-primary">Telusuri</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row container-fluid"">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img src="" class="card-img-top" alt="...">
+          <h5 class="card-title">Pengalaman Kerja</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
+        <a href="{{url('pengalamankerja')}}" class="btn btn-primary">Lihat</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 
 
 

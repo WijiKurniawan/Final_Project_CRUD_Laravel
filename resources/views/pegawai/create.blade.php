@@ -5,6 +5,7 @@
 @section('content')
 
 <div class="container">
+    <br>
     <h1 class="text-center">Halaman Tambah Data Pegawai</h1>
     <form action="/pegawai/store" method="POST">
         @csrf
@@ -48,7 +49,9 @@
 
 
         <input type="submit" name="submit" class="btn btn-primary" value="Simpan">
-
+        <br>
+        <br>
+        <br>
 
 
         <!-- <form action="/pegawai/store" method ="POST">
