@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1 class="text-center">Halaman Create Pendidikan</h1>
-    <form action="/pegawai/store" method="POST">
+    <form action="/pendidikan/store" method="POST">
         @csrf
         <div class="mb-3">
             <label for="createPegawai" class="form-label">id</label>
@@ -26,7 +26,7 @@
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Jurusan</label>
-            <input type="date" name="Jurusan" class="form-control" id="createPegawai" aria-describedby="">
+            <input type="text" name="Jurusan" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">IPK</label>

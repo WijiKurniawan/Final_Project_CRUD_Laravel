@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Halaman Edit Pendidikan Pegawai</h1>
-    <form action="/pegawai/{{$pegawai->id}}" method="POST">
+    <form action="/pendidikan/{{$pendidikan->id}}" method="POST">
         @method('put')
         @csrf
         <div class="mb-3">
