@@ -8,6 +8,7 @@
 <div class="container">
     <h1 class="text-center">Halaman Edit Absen</h1>
     <form action="/absen/{{$absen->id}}" method="POST">
+        @method('put')
         @csrf
         <div class="mb-3">
             <label for="Nama" class="form-label">Masukan Nama Pegawai</label>

@@ -91,7 +91,6 @@
       <br>
       <table class="table table-hover">
         <tr>
-          <th>NIP</th>
           <th>Nama</th>
           <th>Keterangan</th>
           <th>Tanggal</th>
@@ -99,7 +98,6 @@
         </tr>
         @foreach($absen as $a)
         <tr>
-          <td>{{$a->id}}</td>
           <td>{{$a->Nama}}</td>
           <td>{{$a->Keterangan}}</td>
           <td>{{$a->created_at}}</td>

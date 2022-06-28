@@ -92,6 +92,6 @@ class Pengalaman_kerjaC extends Controller
         //2 masukkan perintah delete
         $pengalamankerja->delete();
         //3 redirect
-        return redirect('/penglamankerja');
+        return redirect('/pengalamankerja');
     }
 }

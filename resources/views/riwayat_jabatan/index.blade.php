@@ -87,7 +87,6 @@
       <br>
       <table class="table table-hover">
         <tr>
-          <th>id</th>
           <th>Nama</th>
           <th>Kode Jabatan</th>
           <th>Tanggal Mulai Jabatan</th>
@@ -96,7 +95,6 @@
         </tr>
         @foreach($riwayat_jabatan as $rj)
         <tr>
-          <td>{{$rj->id}}</td>
           <td>{{$rj->Nama}}</td>
           <td>{{$rj->KodeJabatan}}</td>
           <td>{{$rj->TanggalMulaiJabatan}}</td>

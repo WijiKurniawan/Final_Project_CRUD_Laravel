@@ -8,11 +8,7 @@
     <h1>Halaman Edit Lemburi</h1>
     <form action="/lembur/{{$lembur->id}}" method="POST">
         @method('put')
-        @csrf
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">id</label>
-            <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$lembur->id}}">
-        </div>
+        @csrf      
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nama</label>
             <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$lembur->Nama}}">

@@ -5,14 +5,11 @@
 @section('content')
 
 <div class="container">
-    <h1>Halaman Edit Pendidikan Pegawai</h1>
+    <br>
+    <h1 class="text-center">Halaman Edit Pendidikan Pegawai</h1>
     <form action="/pendidikan/{{$pendidikan->id}}" method="POST">
         @method('put')
         @csrf
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">id</label>
-            <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pendidikan->id}}">
-        </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nama</label>
             <input type="text" name="Nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pendidikan->Nama}}">

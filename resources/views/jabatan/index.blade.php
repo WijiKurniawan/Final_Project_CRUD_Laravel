@@ -80,17 +80,12 @@
 
 <br>
 
-<br />
-  
-
   <body>
     <div class="container">
       <a class="btn btn-primary" href="/jabatan/create"> + Tambah </a>
       <br>
-      <br>
       <table class="table table-hover">
         <tr>
-          <th>NIP</th>
           <th>Nama</th>
           <th>Kode Jabatan</th>
           <th>Nama Jabatan</th>
@@ -98,7 +93,6 @@
         </tr>
         @foreach($jabatan as $j)
         <tr>
-          <td>{{$j->id}}</td>
           <td>{{$j->Nama}}</td>
           <td>{{$j->KodeJabatan}}</td>
           <td>{{$j->NamaJabatan}}</td>

@@ -102,7 +102,6 @@
       <br>
       <table class="table table-hover">
         <tr>
-          <th>id</th>
           <th>Nama</th>
           <th>Tanggal</th>
           <th>JamLembur</th>
@@ -110,7 +109,6 @@
         </tr>
         @foreach($lembur as $l)
         <tr>
-          <td>{{$l->id}}</td>
           <td>{{$l->Nama}}</td>
           <td>{{$l->Tanggal}}</td>
           <td>{{$l->JamLembur}}</td>

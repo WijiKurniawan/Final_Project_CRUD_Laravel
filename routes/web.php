@@ -80,7 +80,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/pengalamankerja/create', [Pengalaman_kerjaC::class, 'create']);
     Route::post('/pengalamankerja/store', [Pengalaman_kerjaC::class, 'store']);
     Route::get('/pengalamankerja/edit/{id}', [Pengalaman_kerjaC::class, 'edit']);
-    Route::put('/pengalmankerja/{id}', [Pengalaman_kerjaC::class, 'update']);
+    Route::put('/pengalamankerja/{id}', [Pengalaman_kerjaC::class, 'update']);
     Route::delete('/pengalamankerja/{id}', [Pengalaman_kerjaC::class, 'destroy']);
 });
 // route penglaman kerja end

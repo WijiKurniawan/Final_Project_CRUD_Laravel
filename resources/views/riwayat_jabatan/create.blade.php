@@ -5,13 +5,10 @@
 @section('content')
 
 <div class="container">
+    <br>
     <h1 class="text-center">Halaman Create</h1>
     <form action="/riwayat_jabatan/store" method="POST">
         @csrf
-        <div class="mb-3">
-            <label for="createPegawai" class="form-label">id</label>
-            <input type="text" name="id" class="form-control" id="createPegawai" aria-describedby="">
-        </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Nama</label>
             <input type="text" name="Nama" class="form-control" id="createPegawai" aria-describedby="">

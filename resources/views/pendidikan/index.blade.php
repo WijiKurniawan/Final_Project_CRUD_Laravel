@@ -87,7 +87,6 @@
       <br>
       <table class="table table-hover">
         <tr>
-          <th>id</th>
           <th>Nama</th>
           <th>Pendidikan</th>
           <th>NamaInstansi</th>
@@ -97,7 +96,6 @@
         </tr>
         @foreach($pendidikan as $pp)
         <tr>
-          <td>{{$pp->id}}</td>
           <td>{{$pp->Nama}}</td>
           <td>{{$pp->Pendidikan}}</td>
           <td>{{$pp->NamaInstansi}}</td>

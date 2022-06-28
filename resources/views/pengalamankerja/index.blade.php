@@ -92,7 +92,6 @@
       <br>
       <table class="table table-hover">
         <tr>
-          <th>id</th>
           <th>Nama</th>
           <th>Nama Perusahaan</th>
           <th>Tahun</th>
@@ -102,7 +101,6 @@
         </tr>
         @foreach($pengalamankerja as $pk)
         <tr>
-          <td>{{$pk->id}}</td>
           <td>{{$pk->Nama}}</td>
           <td>{{$pk->NamaPerusahaan}}</td>
           <td>{{$pk->Tahun}}</td>
