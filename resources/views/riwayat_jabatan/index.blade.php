@@ -82,7 +82,7 @@
 
 <body>
     <div class="container">
-      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
+      <a class="btn btn-primary" href="/riwayat_jabatan/create"> + Tambah</a>
       <br>
       <br>
       <table class="table table-hover">
@@ -98,12 +98,12 @@
         <tr>
           <td>{{$rj->id}}</td>
           <td>{{$rj->Nama}}</td>
-          <td>{{$rj->Kode Jabatan}}</td>
+          <td>{{$rj->KodeJabatan}}</td>
           <td>{{$rj->TanggalMulaiJabatan}}</td>
           <td>{{$rj->TanggalAkhirJabatan}}</td>
           <td>
             
-            <form action="/riwayatjabatan/{{$rj->id}}" method="POST"><a class="btn btn-warning" href="/riwayatjabatan/edit/{{ $rj->id }}">Edit</a>
+            <form action="/riwayat_jabatan/{{$rj->id}}" method="POST"><a class="btn btn-warning" href="/riwayat_jabatan/edit/{{ $rj->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
               @csrf
               @method('delete')

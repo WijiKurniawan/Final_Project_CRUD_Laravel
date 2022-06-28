@@ -25,7 +25,7 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{url('lembur')}}">Lembur</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="{{url('riwayatjabatan')}}">Riwayat jabatan</a></li>
+            <li><a class="dropdown-item" href="{{url('riwayat_jabatan')}}">Riwayat jabatan</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="{{url('pendidikan')}}">Pendidikan</a></li>
             <li><hr class="dropdown-divider"></li>

@@ -9,5 +9,5 @@ class Riwayat_jabatan extends Model
 {
     use HasFactory;
     protected $table = 'riwayat_jabatan';
-    protected $guard = [];
+    protected $guarded = [];
 }

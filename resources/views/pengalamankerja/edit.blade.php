@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Halaman Edit Pengalaman Kerja</h1>
-    <form action="/pegawai/{{$pegawai->id}}" method="POST">
+    <form action="/pengalamankerja/{{$pengalamankerja->id}}" method="POST">
         @method('put')
         @csrf
         <div class="mb-3">
@@ -27,11 +27,11 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Jabatan Lama</label>
-            <input type="date" name="Jabatan Lama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pengalamankerja->Jabatan Lama}}">
+            <input type="text" name="JabatanLama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pengalamankerja->JabatanLama}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Lama Bekerja</label>
-            <input type="text" name="Lama Bekerja" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pengalamankerja->Lama Bekerja}}">
+            <input type="text" name="LamaBekerja" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pengalamankerja->LamaBekerja}}">
         </div>
         
         <input type="submit" name="submit" class="btn btn-primary" value="Simpan">

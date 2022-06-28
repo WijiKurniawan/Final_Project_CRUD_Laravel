@@ -27,7 +27,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Jurusan</label>
-            <input type="date" name="Jurusan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pendidikan->Jurusan}}">
+            <input type="text" name="Jurusan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$pendidikan->Jurusan}}">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">IPK</label>

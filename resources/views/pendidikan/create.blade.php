@@ -22,7 +22,7 @@
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Nama Instansi</label>
-            <input type="text" name="Nama Instansi" class="form-control" id="createPegawai" aria-describedby="">
+            <input type="text" name="NamaInstansi" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Jurusan</label>

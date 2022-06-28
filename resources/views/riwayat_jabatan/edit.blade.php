@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1>Halaman Edit Riwayat Jabatan</h1>
-    <form action="/pegawai/{{$pegawai->id}}" method="POST">
+    <form action="/riwayat_jabatan/{{$riwayat_jabatan->id}}" method="POST">
         @method('put')
         @csrf
         <div class="mb-3">

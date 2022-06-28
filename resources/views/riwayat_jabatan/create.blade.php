@@ -6,7 +6,7 @@
 
 <div class="container">
     <h1 class="text-center">Halaman Create</h1>
-    <form action="/pegawai/store" method="POST">
+    <form action="/riwayat_jabatan/store" method="POST">
         @csrf
         <div class="mb-3">
             <label for="createPegawai" class="form-label">id</label>
