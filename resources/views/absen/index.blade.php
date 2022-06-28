@@ -93,20 +93,16 @@
         <tr>
           <th>NIP</th>
           <th>Nama</th>
-          <th>Jumlah Hadir</th>
-          <th>Jumlah Sakit</th>
-          <th>Jumlah Izin</th>
-          <th>Jumlah Tanpa Keterangan</th>
+          <th>Keterangan</th>
+          <th>Tanggal</th>
           <th>Opsi</th>
         </tr>
         @foreach($absen as $a)
         <tr>
           <td>{{$a->id}}</td>
           <td>{{$a->Nama}}</td>
-          <td>{{$a->JumlahHadir}}</td>
-          <td>{{$a->JumlahSakit}}</td>
-          <td>{{$a->JumlahIzin}}</td>
-          <td>{{$a->JumlahTanpaKeterangan}}</td>
+          <td>{{$a->Keterangan}}</td>
+          <td>{{$a->created_at}}</td>
           <td>
           <form action="/absen/{{$a->id}}" method="POST"><a class="btn btn-warning" href="/absen/edit/{{ $a->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->

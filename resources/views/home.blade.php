@@ -63,7 +63,7 @@
           </li>
           <li class="nav-item dropdown text-black">
             <a class="nav-link dropdown-toggle text-black " href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Lainnya
+              Menu
             </a>
             <ul class="dropdown-menu text-black" aria-labelledby="offcanvasNavbarDropdown">
             <li><a class="dropdown-item" href="{{url('pegawai')}}">Pegawai</a></li>

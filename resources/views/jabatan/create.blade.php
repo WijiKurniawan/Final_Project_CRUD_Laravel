@@ -9,7 +9,7 @@
     <form action="/jabatan/store" method="POST">
         @csrf
         <div class="mb-3">
-            <label for="createPegawai" class="form-label">id</label>
+            <label for="createPegawai" class="form-label">NIP</label>
             <input type="text" name="id" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">

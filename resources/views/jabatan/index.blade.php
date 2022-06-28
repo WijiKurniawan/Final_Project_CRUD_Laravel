@@ -90,7 +90,7 @@
       <br>
       <table class="table table-hover">
         <tr>
-          <th>id</th>
+          <th>NIP</th>
           <th>Nama</th>
           <th>Kode Jabatan</th>
           <th>Nama Jabatan</th>

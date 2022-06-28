@@ -16,10 +16,7 @@ class CreateAbsenTable extends Migration
         Schema::create('absen', function (Blueprint $table) {
             $table->id();
             $table->text('Nama');
-            $table->text('JumlahHadir');
-            $table->text('JumlahSakit');
-            $table->text('JumlahIzin');
-            $table->text('JumlahTanpaKeterangan');
+            $table->text('Keterangan',);
             $table->timestamps();
         });
     }
