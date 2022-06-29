@@ -123,16 +123,6 @@
     </div>
   </div>
 </div>
-<div class="col-sm-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Absen</h5>
-      <p class="card-text">Di halaman ini user dapat menambah data kehadiran pegawai</p>
-      <a href="{{url('absen')}}" class="btn btn-primary">Telusuri</a>
-    </div>
-  </div>
-</div>
-</div>
 <br>
 <br>
 <div class="row container-fluid">
