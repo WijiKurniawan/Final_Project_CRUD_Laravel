@@ -173,7 +173,7 @@
   <div class=" col-sm-6">
   <div class="card">
     <div class="card-body">
-      <img src="" class="card-img-top" alt="...">
+
       <h5 class="card-title">Pengalaman Kerja</h5>
       <p class="card-text">Di halaman ini user dapat menambah data pengalaman kerja pegawai</p>
       <a href="{{url('pengalamankerja')}}" class="btn btn-primary">Lihat</a>
