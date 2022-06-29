@@ -6,7 +6,7 @@
 
 <div class="container">
     <br>
-    <h1 class="text-center">Halaman Create Pengalaman Kerja</h1>
+    <h1 class="text-center">Halaman Tambah Pengalaman Kerja</h1>
     <form action="/pengalamankerja/store" method="POST">
         @csrf
         <div class="mb-3">

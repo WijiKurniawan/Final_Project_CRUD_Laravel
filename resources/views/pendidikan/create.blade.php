@@ -6,7 +6,7 @@
 
 <div class="container">
     <br>
-    <h1 class="text-center">Halaman Create Pendidikan</h1>
+    <h1 class="text-center">Halaman Tambah Pendidikan</h1>
     <form action="/pendidikan/store" method="POST">
         @csrf
         <div class="mb-3">

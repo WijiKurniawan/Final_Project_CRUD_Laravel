@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Pegawai</a>
           </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url('home')}}">Home</a>
+        </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Lainnya
@@ -95,7 +98,7 @@
 
   <body>
     <div class="container">
-      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Pegawai Baru</a>
+      <a class="btn btn-primary" href="/pegawai/create"> + Tambah Data Pegawai Baru</a>
       <br>
       <br>
       <table class="table table-hover">

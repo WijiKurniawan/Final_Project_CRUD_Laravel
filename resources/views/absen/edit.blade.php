@@ -30,9 +30,9 @@
             </label>
         </div>
         <div class="form-check form-check-danger">
-            <input class="form-check-input" type="radio" name="keterangan" id="Danger" value="Sakit" checked>
+            <input class="form-check-input" type="radio" name="keterangan" id="Danger" value="Tanpa Keterangan" checked>
             <label class="form-check-label" for="Danger">
-                Sakit
+                Tanpa Keterangan
             </label>
         </div>
         <br>

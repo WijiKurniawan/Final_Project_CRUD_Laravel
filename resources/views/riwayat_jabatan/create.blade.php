@@ -6,7 +6,7 @@
 
 <div class="container">
     <br>
-    <h1 class="text-center">Halaman Create</h1>
+    <h1 class="text-center">Halaman Tambah Riwayat Jabatan</h1>
     <form action="/riwayat_jabatan/store" method="POST">
         @csrf
         <div class="mb-3">
