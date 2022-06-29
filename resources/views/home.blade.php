@@ -104,7 +104,6 @@
 <br>
 <br>
 <div class="row container-fluid"">
-<<<<<<< HEAD
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
@@ -121,14 +120,6 @@
         <p class="card-text">Kumpulan data absensi pegawai</p>
         <a href="{{url('absen')}}" class="btn btn-primary">Lihat</a>
       </div>
-=======
-  <div class=" col-sm-6">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Pegawai</h5>
-      <p class="card-text">Di halaman ini user dapat menambah data pegawai</p>
-      <a href="{{url('pegawai')}}" class="btn btn-primary">Telusuri</a>
->>>>>>> 35d67218212528e9580d9571de7691104855b67e
     </div>
   </div>
 </div>
@@ -149,13 +140,8 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Pendidikan Pegawai</h5>
-<<<<<<< HEAD
         <p class="card-text">Kumpulan data pendidikan pegawai</p>
         <a href="{{url('pendidikan')}}" class="btn btn-primary">Lihat</a>
-=======
-        <p class="card-text">Di halaman ini user dapat menambah data pendidikan pegawai</p>
-        <a href="{{url('pendidikan')}}" class="btn btn-primary">Halaman Pendidikan Pegawai</a>
->>>>>>> 35d67218212528e9580d9571de7691104855b67e
       </div>
     </div>
   </div>
@@ -163,13 +149,8 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Lembur</h5>
-<<<<<<< HEAD
         <p class="card-text">Kumpulan data lembur pegawai</p>
         <a href="{{url('lembur')}}" class="btn btn-primary">Lihat</a>
-=======
-        <p class="card-text">Di halaman ini user dapat menambah dapat menambah data lembur pegawai</p>
-        <a href="{{url('lembur')}}" class="btn btn-primary">Halaman Lembur</a>
->>>>>>> 35d67218212528e9580d9571de7691104855b67e
       </div>
     </div>
   </div>
@@ -180,30 +161,18 @@
   <div class=" col-sm-6">
     <div class="card">
       <div class="card-body">
-<<<<<<< HEAD
         <h5 class="card-title">Jabatan</h5>
         <p class="card-text">Kumpulan data jabatan pegawai</p>
         <a href="{{url('jabatan')}}" class="btn btn-primary">Lihat</a>
-=======
-        <h5 class="card-title">JABATAN</h5>
-        <p class="card-text">Di halaman ini user dapat menambah data jabatan pegawai</p>
-        <a href="{{url('jabatan')}}" class="btn btn-primary">Halaman Riwayat Jabatan</a>
->>>>>>> 35d67218212528e9580d9571de7691104855b67e
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-<<<<<<< HEAD
         <h5 class="card-title">Riwayat Jabatan</h5>
         <p class="card-text">Kumpulan data riwayat jabatan pegawai</p>
         <a href="{{url('riwayat_jabatan')}}" class="btn btn-primary">Lihat</a>
-=======
-        <h5 class="card-title">RIWAYAT JABATAN</h5>
-        <p class="card-text">Di halaman ini user dapat menambah data riwayat jabatan pegawai</p>
-        <a href="{{url('riwayat_jabatan')}}" class="btn btn-primary">Telusuri</a>
->>>>>>> 35d67218212528e9580d9571de7691104855b67e
       </div>
     </div>
   </div>
@@ -211,7 +180,6 @@
 <br>
 <br>
 <div class="row container-fluid"">
-<<<<<<< HEAD
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
@@ -219,15 +187,6 @@
         <p class="card-text">Kumpulan data pengalaman kerja pegawai</p>
         <a href="{{url('pengalamankerja')}}" class="btn btn-primary">Lihat</a>
       </div>
-=======
-  <div class=" col-sm-6">
-  <div class="card">
-    <div class="card-body">
-
-      <h5 class="card-title">Pengalaman Kerja</h5>
-      <p class="card-text">Di halaman ini user dapat menambah data pengalaman kerja pegawai</p>
-      <a href="{{url('pengalamankerja')}}" class="btn btn-primary">Lihat</a>
->>>>>>> 35d67218212528e9580d9571de7691104855b67e
     </div>
   </div>
 </div>
