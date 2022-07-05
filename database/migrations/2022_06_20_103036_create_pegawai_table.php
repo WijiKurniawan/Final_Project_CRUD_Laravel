@@ -21,6 +21,7 @@ class CreatePegawaiTable extends Migration
             $table->date('TanggalLahir');
             $table->text('Agama');
             $table->enum('JenisKelamin', ['L', 'P']);
+            $table->text('Status');
             $table->text('NoHP');
             $table->timestamps();
         });

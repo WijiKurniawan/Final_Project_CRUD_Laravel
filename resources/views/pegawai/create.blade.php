@@ -34,13 +34,17 @@
             <input type="text" name="Agama" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div>
-        <label for="createPegawai">Jenis Kelamin</label>
-        <br>
-        <select class="form-select" name="JenisKelamin" id="createPegawai"><br>
-            <option value="">Pilih Jenis Kelamin</option>
-            <option value="L">Laki Laki</option>
-            <option value="P">Perempuan</option>
-        </select><br>
+            <label for="createPegawai">Jenis Kelamin</label>
+            <br>
+            <select class="form-select" name="JenisKelamin" id="createPegawai"><br>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="L">Laki Laki</option>
+                <option value="P">Perempuan</option>
+            </select><br>
+        </div>
+        <div class="mb-3">
+            <label for="createPegawai" class="form-label">Status</label>
+            <input type="text" name="Status" class="form-control" id="createPegawai" aria-describedby="">
         </div>
         <div class="mb-3">
             <label for="createPegawai" class="form-label">Nomor HP</label>

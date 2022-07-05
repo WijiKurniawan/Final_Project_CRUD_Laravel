@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
-@section('title','data pegawai')
+@section('title','data PEGAWAI')
 
 @section('content')
+
 <body>
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <div class="container-fluid">
@@ -16,8 +17,8 @@
             <a class="nav-link active" aria-current="page" href="#">Pegawai</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{url('home')}}">Home</a>
-        </li>
+            <a class="nav-link active" aria-current="page" href="{{url('home')}}">Home</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Lainnya
@@ -49,41 +50,40 @@
           </li>
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
+            <!-- Authentication Links -->
+            @guest
+            @if (Route::has('login'))
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+            </li>
+            @endif
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
+            @if (Route::has('register'))
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+            </li>
+            @endif
+            @else
+            <li class="nav-item dropdown">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->name }}
+              </a>
 
-                                
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                  {{ __('Logout') }}
+                </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                  @csrf
+                </form>
+              </div>
+            </li>
+            @endguest
+          </ul>
           <li class="nav-item">
 
           </li>
@@ -94,7 +94,7 @@
 
 
   <br />
-  
+
 
   <body>
     <div class="container">
@@ -110,6 +110,7 @@
           <th>TanggalLahir</th>
           <th>Agama</th>
           <th>Jenis Kelamin</th>
+          <th>Status</th>
           <th>No.HP</th>
           <th>Opsi</th>
         </tr>
@@ -122,9 +123,10 @@
           <td>{{$p->TanggalLahir}}</td>
           <td>{{$p->Agama}}</td>
           <td>{{$p->JenisKelamin}}</td>
+          <td>{{$p->Status}}</td>
           <td>{{$p->NoHP}}</td>
           <td>
-            
+
             <form action="/pegawai/{{$p->id}}" method="POST"><a class="btn btn-warning" href="/pegawai/edit/{{ $p->id }}">Edit</a>
               <!--ini untuk pilihh yg mana tabel yg nk dihapus -->
               @csrf
