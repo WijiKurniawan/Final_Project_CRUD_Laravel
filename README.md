@@ -17,15 +17,15 @@ This project is a Laravel-based web application designed as a final project to d
 ## Installation
 To set up this project locally, follow these steps:
 
-1.  bashCopy codecomposer install
+1.  composer install
     
-2.  bashCopy codecp .env.example .envUpdate the **.env** file with your database credentials.
+2. cp .env.example .envUpdate the **.env** file with your database credentials.
     
-3.  bashCopy codephp artisan key:generate
+3.  php artisan key:generate
     
-4.  bashCopy codephp artisan migrate
+4.  php artisan migrate
     
-5.  bashCopy codephp artisan serveThe application will be available at **http://localhost:8000**.
+5.  php artisan serveThe application will be available at **http://localhost:8000**.
     
 
 Contributing
@@ -41,6 +41,6 @@ Distributed under the MIT License. See **LICENSE** for more information.
 Contact
 -------
 
-*   Your Name – Your Email
+*   Wiji Kurniawan – wijikurniawan121@gmail.com
     
 *   Project Link: [https://github.com/WijiKurniawan/Final\_Project\_CRUD\_Laravel](https://github.com/WijiKurniawan/Final_Project_CRUD_Laravel)
