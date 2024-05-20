@@ -63,5 +63,49 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+Final Project CRUD with Laravel
+This repository contains a final project demonstrating a CRUD (Create, Read, Update, Delete) application built with the Laravel framework. The project showcases the following features:
 
-kamenn uii
+User Authentication: Secure user login and registration.
+CRUD Operations: Basic CRUD functionalities for managing resources.
+Database Integration: Seamless interaction with a MySQL database.
+Blade Templating: Use of Blade templating engine for dynamic content rendering.
+Responsive Design: User interface designed to be responsive and user-friendly.
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/WijiKurniawan/Final_Project_CRUD_Laravel.git
+Navigate to the project directory:
+bash
+Copy code
+cd Final_Project_CRUD_Laravel
+Install dependencies:
+bash
+Copy code
+composer install
+npm install
+Copy the example environment file and configure your environment settings:
+bash
+Copy code
+cp .env.example .env
+Generate an application key:
+bash
+Copy code
+php artisan key:generate
+Run database migrations:
+bash
+Copy code
+php artisan migrate
+Serve the application:
+bash
+Copy code
+php artisan serve
+Usage
+Access the application in your browser at http://localhost:8000. You can register a new user or log in with existing credentials to start managing resources.
+
+Contributing
+Contributions are welcome! Please submit a pull request or open an issue to discuss improvements or bug fixes.
+
+License
+This project is licensed under the MIT License.
